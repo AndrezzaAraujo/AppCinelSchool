@@ -1,0 +1,35 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace Projetoteste
+{
+    public partial class gestao_turmas : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (Session["nome"] != null && !string.IsNullOrEmpty(Session["nome"].ToString()))
+            {
+
+            }
+            else
+            {
+                // se não estiver na sessão, volta ao index
+                Response.Redirect("index.aspx");
+            }
+        }
+
+        protected void btn_goPage_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btn_goPage_Click1(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="outras_pages.master.cs" Inherits="Projetoteste.outras_pages" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+	<asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title></title>
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="../main_template/css/bootstrap.min.css" />
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="../main_template/css/font-awesome.min.css" />
+    <!-- Custom stlylesheet -->
+    <link type="text/css" rel="stylesheet" href="../main_template/css/style.css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->    
+</head>
+
+<body>
+<form id="form1" runat="server">   
+	 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+     </asp:ContentPlaceHolder>
+
+   <!-- Header -->
+		<header id="header" class="transparent-nav" style="background-color:lightgray;">
+			<div class="container">
+				<div class="navbar-header">
+					<!-- Logo -->
+					<div class="navbar-brand">
+						<a class="logo" href="index.aspx">
+							<img src="../main_template/img/logo_cinel_nome_sem_fundo.png" alt="logo"/>
+							<%--<img src="img/logo1_transparent.png" style="width: 50px; height: 50px;" alt="logo"/>--%>
+						</a>
+					</div>
+					<!-- /Logo -->
+					<!-- Mobile toggle -->
+					<button class="navbar-toggle">
+						<span></span>
+					</button>
+					<!-- /Mobile toggle -->
+				</div>
+				<!-- Navigation -->
+				<nav id="nav">
+					<ul class="main-menu nav navbar-nav navbar-right">
+						<li><a href="index.aspx">Home</a></li>
+						<li><a href="#">Cursos</a></li> <%--sem page--%>							
+						<%--<li><a href="blog.aspx">Blog</a></li>--%>
+						<%--<li><a href="#">About</a></li>--%> <%--sem page--%>
+						<li><a href="contact.aspx">Sobre Nós</a></li>		
+						<li><a href="login.aspx">Login & Registo</a></li>  
+						<%--<li><a href="login.aspx">Registe para se candidatar</a></li>--%>
+					</ul>
+				</nav>
+				<!-- /Navigation -->
+			</div>
+		</header>
+		<!-- /Header -->
+    </form>
+    <!-- jQuery Plugins -->
+		<script type="text/javascript" src="../main_template/js/jquery.min.js"></script>
+		<script type="text/javascript" src="../main_template/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../main_template/js/main.js"></script>
+</body>
+</html>
